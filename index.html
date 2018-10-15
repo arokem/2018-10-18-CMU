@@ -3,10 +3,10 @@
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-		<meta name="description" content="Two slides for CNC">
+		<meta name="description" content="Talk at the CMU reproducibility symposium">
 		<meta name="author" content="Ariel Rokem">
 
-		<title> Neuroinformatics and data science </title>
+		<title> Open source software for reproducible neuroscience </title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 		<link rel="stylesheet" href="css/theme/arokem.css">
@@ -47,7 +47,7 @@
 	<section>
 
 		<em>
-		<h2> Open source tools for the era of brain observatories </h2>
+		<h2> NIPY: An eco-system for open neuroscience </h2>
 		</em>
 		<h3>Open Science Symposium, October 18, 2018</h3><br>
 		<h3>Carnegie-Mellon University</h3>
@@ -63,6 +63,17 @@
 
 	<section>
 		<img src="img/eScience-infographic.png">
+	</section>
+	<section>
+		<h4>Normal behavior is supported by brain connectivity</h4>
+		<img src="./img/OldenDays.png" height="505">
+		<div class="cite">
+			Image from <br><a href="https://www.ncbi.nlm.nih.gov/pubmed/16141282">Catani and ffytche (2015)</a>
+		</div>
+	</section>
+
+	<section>
+		<img src="./img/optic-radiation-postmortem.png" height="505" >
 	</section>
 
 	<section>
@@ -140,10 +151,186 @@
 			<a href="https://www.biorxiv.org/content/early/2018/06/20/347872">Huber et al. (under review)</a>
 
 		</div>
+	</section>
+
+	<section>
+		<img src="./img/optic-radiation-postmortem.png" height="505" >
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<video width="600" autoplay loop>
+			<source src="./img/dMRI-signal-movie.mp4">
+		</video>
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+	</section>
+
+	<section>
+		<img src="./img/optic-radiation-postmortem.png" height="505" >
+	</section>
+
+
+	<section>
+		<h3>Not just passive cables</h3>
+		<p class="fragment">Brain connections develop and mature with age</p>
+		<p class="fragment">Individual differences account for differences in behaviour</p>
+		<p class="fragment">Adapt and change with learning</p>
+		<p class="fragment">The integrity of these connections is crucial to neurological health</p>
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-iso-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-iso-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 390, 450, 590, 450);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-iso-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-iso-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 250, 350, 250, 150);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class="fragment" text-align: left>
+			Isotropic diffusion
+		</div>
+		<video width="600" autoplay loop>
+			<source src="./img/diffusion-isotropic.mp4">
+		</video>
+
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
 
 	</section>
 
 	<section>
+		<h4>Diffusion MRI</h4>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-aniso-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-aniso-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 250, 325, 250, 175);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-aniso-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-aniso-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 370, 400, 610, 400);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class="fragment" text-align:left;>
+			Anisotropic diffusion
+		</div>
+		<video width="600" autoplay loop>
+			<source src="./img/diffusion-anisotropic.mp4">
+		</video>
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+	</section>
+
+
+
+	<section>
+		<h4>Diffusion statistics</h4>
+		<div class="fragment" style="position: absolute; left: 14px;">
+			<img src="img/tensor-stats1.png" height="400"  >
+			<div style="position: absolute; left: 75px; top: 420px;">
+				<small>Mean diffusivity</small>
+			</div>
+			<div style="position: absolute; left: -8px;">
+				<img src="img/md-scale.png" height="40" >
+			</div>
+			<div style="position: absolute; left: 222px; top:432px; ">
+				<img src="img/md-units.png" height="50" >
+			</div>
+		</div>
+		<div class="fragment fade-in" style="position: absolute; left: 7px;">
+			<img src="img/tensor-stats2.png" height="400"  >
+
+			<div style="position: absolute; left: 350px; top:432px; ">
+				<video width="200" autoplay loop>
+					<source src="./img/diffusion-fa-251.mov">
+			</div>
+
+			<div style="position: absolute; left: 350px; top: 420px;">
+				<small>Fractional anisotropy</small>
+			</div>
+
+		</div>
+		<div class="fragment fade-in" style="position: absolute; left: 0px;">
+			<img src="img/tensor-stats3.png" height="400"  >
+			<div style="position: absolute; left: 600px; top: 420px;">
+				<small>Principal diffusion direction</small>
+			</div>
+			<div style="position: absolute; left: 700px; top:432px; ">
+				<img src="img/axes.png" height="100" >
+			</div>
+		</div>
+		<div style="position: absolute; left: 600px; top: 640px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+	</section>
+
+	<section>
+		<img align="center" src="img/pyafq_segmentation1.gif" height="500">
+	</section>
+
+	<section>
+		<img align="center" src="img/pyafq_segmentation2.gif" height="500">
+	</section>
+
+	<section>
+		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
+		<img src="img/sarica_results.png" height="300px">
+		<div class="cite">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+		</div>
+	</section>
+
+
+	<section>
+		<h2>Challenges for open and reproducible neuroscience</h2>
+		<p class="fragment"></p>
+		<p class="fragment"></p>
+		<p class="fragment"></p>
+
+	</section>
+
+	<!-- <section>
 		<h3>Observatory-driven science</h3>
 		<div class="row fragment" data-fragment-index="1">
 				<div class="imgcite two-col">
@@ -183,7 +370,7 @@
 						</div>
 					  </div>
 
-				<div class="row">
+				<div class="row fragment fade-in">
 				  <div class="col-13 textcol">
 					<img class="logo" src="img/hcp-logo.jpg" width="200" align="middle" alt="Human Connectome Project logo" border="0">
 				  </div>
@@ -247,13 +434,14 @@
 	<section>
 			<h2>Challenges</h2>
 			<p class="fragment">Data arriving at unprecedented volume, variety and velocity</p>
-			<p class="fragment">=> Instead of moving the data to the compute, need to bring the compute to the data</p>
 			<p class="fragment">=> Need new tools and approaches to process, analyze and interpret</p>
-			<p class="fragment">=> Web-based analysis tools become first-class citizens in our tool-kit</p>
-			<p class="fragment">=> New sociotechnical structures needed to facilitate training and collaboration</p>
+			<p class="fragment">=> New </p>
+			<p class="fragment">=> New sociotechnical structures to data science </p>
+	</section> -->
+
+	<section>
+		<h2>Open source software is a necessary complement to brain observatories</h2>
 	</section>
-
-
 
 	<section>
 		<h2>Open-source software for science</h2>
@@ -353,6 +541,57 @@
 	</section>
 
 	<section>
+		<h2> NIPY: Neuroimaging in Python</h2>
+		<p class="fragment">A community of practice</p>
+		<p class="fragment"></p>
+
+	</section>
+
+	<section>
+		<h2> Open source diffusion MRI</h2>
+		<img src="img/dipy-logo.png">
+		<br>
+		Comprehensive
+		<br>
+		Thoroughly tested
+		<br>
+		Well-documented
+		<br>
+		<br>
+		<img src="img/eleftherios.jpg" height="200">
+		<br>
+		Eletherios Garyfallidis (Indiana University)
+		<div class="cite" style="font-size:14px">
+			<a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Open to users</h2>
+		<img src="img/dipy_users.png">
+		<div class="cite" style="font-size:14px">
+			<a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Open to contributors</h2>
+		<img src="img/dipy_contributors.png">
+		<div class="cite" style="font-size:14px">
+			<a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+		</div>
+	</section>
+
+	<section>
+		<h2>Distributed collaboration</h2>
+		<img src="img/dipy_global.png">
+		<div class="cite" style="font-size:14px">
+		<a href="https://www.frontiersin.org/articles/10.3389/fninf.2014.00008/full">Garyfallidis, Brett, Amirbekian, Rokem, van der Walt, Descoteaux, Nimmo Smith, and DIPY contributors (2014) <br> Frontiers in Neuroinformatics</a>
+		</div>
+	</section>
+
+
+	<section>
 		<h2>Challenges for scientific software</h2>
 		<p class="fragment">Sustainability</p>
 		<p class="fragment">Quality assurance</p>
@@ -371,6 +610,8 @@
 			<div class="cite"><a href="https://peerj.com/articles/cs-147/">Niemeyer et al. (2018)</a></div>
 		</div>
 	</section>
+
+
 
 	<section>
 		<h3>Challenge: tools for exploration of complex data</h3>
@@ -421,9 +662,8 @@
 
 	</section>
 
-
 	<section>
-		<h3><a href="https://yeatmanlab.github.io/Sarica_2017">https://yeatmanlab.github.io/Sarica_2017</a></h3>
+		<h3><a href="https://yeatmanlab.github.io/Sarica_2017">AFQ-Browser</a></h3>
 
 		<video width="800" autoplay loop>
 			<source src="./img/afq-browser-demo.mp4">
@@ -467,96 +707,6 @@
 
 	</section>
 
-
-	<section id="afq-insight">
-	<h3>Statistical learning approaches to large datasets</h3>
-	<div style="position: absolute; left:40px; top:80px;">
-	<img src="img/adam.jpeg" height="300">
-		<br>
-		Adam Richie-Halford
-	</div >
-	<div style="position: absolute; left:350px; top:80px;">
-	<img src="img/noah.jpg", height="300">
-		<br>
-		Noah Simon
-	</div>
-	<div style="position: absolute; left:600px; top:80px;">
-	<img src="img/jason.jpg" height="300">
-	<br>
-	Jason Yeatman
-	</div>
-	</section>
-
-
-	<section>
-		<h2>Diffusion MRI data has group structure</h2>
-		<img src="img/sgl_design.png" height="500px">
-	</section>
-
-	<section>
-		<h2> Sparse Group Lasso</h2>
-		<img src="img/sgl_result.png" height="300px">
-		<p>Classification accuracy of ~84% (AUC of 0.9)</p>
-		<p>Top 10 features selected include CST</p>
-		<div class="cite">
-			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
-		</div>
-
-	</section>
-
-	<section>
-	<h4>Open source software is a necessary complement to brain observatories</h4>
-		<p>Required for reproducibility</p>
-		<p>Enables building on previous work</p>
-	</section>
-
-	<section>
-		Braindr:
-		<br>
-		<a href="https://github.com/akeshavan/braindr-analysis">https://github.com/akeshavan/braindr-analysis</a>
-		<br>
-		<br>
-		AFQ-Browser:
-		<br>
-		<a href="https://github.com/yeatmanlab/pyAFQ">https://github.com/yeatmanlab/pyAFQ</a>
-		<br>
-		<a href="https://github.com/yeatmanlab/AFQ-Browser">https://github.com/yeatmanlab/AFQ-Browser</a>
-		<br>
-		<br>
-		Sparse Group Lasso:
-		<br>
-		<a href="https://github.com/richford/AFQ-Insight">https://github.com/richford/AFQ-Insight</a>
-	</section>
-
-	<section>
-		<h2>How do we learn about all of these things?</h2>
-	</section>
-
-	<section>
-		<img src="img/eScience-infographic.png" height=200>
-		<img src="img/data-science-studio.jpg">
-	</section>
-
-	<section>
-		<a href="https://escience.washington.edu/education/phd/advanced-phd-data-science-option/">Data Science Option</a>
-		<p class="fragment">Similar to the Comp Neuro option</p>
-		<p class="fragment">Take a few courses:</p>
-		<p class="fragment">Data management</p>
-		<p class="fragment">Data analysis</p>
-		<p class="fragment">Machine learning and stats</p>
-
-
-	</section>
-
-	<section>
-		<a href="https://uwescience.github.io/neuroinformatics/">Neuroinformatics Special Interest Group</a>
-
-		<p class="fragment">Discussions</p>
-		<p class="fragment">Tutorials</p>
-		<p class="fragment">Code reviews</p>
-		<p class="fragment">...</p>
-	</section>
-
 	<section>
 		<h2><a href="http://neurohackademy.org/">Neurohackademy</a></h2>
 		<br>
@@ -566,8 +716,6 @@
 				<a href="http://www.pnas.org/content/early/2018/08/17/1717196115"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(2018)</a>
 		</div>
 	</section>
-
-
 
 	<section>
 
