@@ -64,6 +64,7 @@
 	<section>
 		<img src="img/eScience-infographic.png">
 	</section>
+
 	<section>
 		<h4>Normal behavior is supported by brain connectivity</h4>
 		<img src="./img/OldenDays.png" height="505">
@@ -154,183 +155,6 @@
 	</section>
 
 	<section>
-		<img src="./img/optic-radiation-postmortem.png" height="505" >
-	</section>
-
-	<section>
-		<h4>Diffusion MRI</h4>
-		<video width="600" autoplay loop>
-			<source src="./img/dMRI-signal-movie.mp4">
-		</video>
-		<div style="position: absolute; left: 600px; top: 600px" >
-			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
-			<br>
-			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
-		</div>
-	</section>
-
-	<section>
-		<img src="./img/optic-radiation-postmortem.png" height="505" >
-	</section>
-
-
-	<section>
-		<h3>Not just passive cables</h3>
-		<p class="fragment">Brain connections develop and mature with age</p>
-		<p class="fragment">Individual differences account for differences in behaviour</p>
-		<p class="fragment">Adapt and change with learning</p>
-		<p class="fragment">The integrity of these connections is crucial to neurological health</p>
-	</section>
-
-	<section>
-		<h4>Diffusion MRI</h4>
-		<div class = "fragment fade-in" style="position: absolute">
-			<canvas id="arrows-iso-horiz" width="1000" height="1000">
-			</canvas>
-			<script>
-				context = document.getElementById('arrows-iso-horiz').getContext("2d");
-				context.beginPath();
-				canvas_arrow_two_heads(context, 390, 450, 590, 450);
-				context.lineWidth = 2;
-				context.stroke();
-			</script>
-		</div>
-		<div class = "fragment fade-in" style="position: absolute">
-			<canvas id="arrows-iso-vert" width="1000" height="1000">
-			</canvas>
-			<script>
-				context = document.getElementById('arrows-iso-vert').getContext("2d");
-				context.beginPath();
-				canvas_arrow_two_heads(context, 250, 350, 250, 150);
-				context.lineWidth = 2;
-				context.stroke();
-			</script>
-		</div>
-
-		<div class="fragment" text-align: left>
-			Isotropic diffusion
-		</div>
-		<video width="600" autoplay loop>
-			<source src="./img/diffusion-isotropic.mp4">
-		</video>
-
-		<div style="position: absolute; left: 600px; top: 600px" >
-			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
-			<br>
-			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
-		</div>
-
-	</section>
-
-	<section>
-		<h4>Diffusion MRI</h4>
-		<div class = "fragment fade-in" style="position: absolute">
-			<canvas id="arrows-aniso-vert" width="1000" height="1000">
-			</canvas>
-			<script>
-				context = document.getElementById('arrows-aniso-vert').getContext("2d");
-				context.beginPath();
-				canvas_arrow_two_heads(context, 250, 325, 250, 175);
-				context.lineWidth = 2;
-				context.stroke();
-			</script>
-		</div>
-		<div class = "fragment fade-in" style="position: absolute">
-			<canvas id="arrows-aniso-horiz" width="1000" height="1000">
-			</canvas>
-			<script>
-				context = document.getElementById('arrows-aniso-horiz').getContext("2d");
-				context.beginPath();
-				canvas_arrow_two_heads(context, 370, 400, 610, 400);
-				context.lineWidth = 2;
-				context.stroke();
-			</script>
-		</div>
-
-		<div class="fragment" text-align:left;>
-			Anisotropic diffusion
-		</div>
-		<video width="600" autoplay loop>
-			<source src="./img/diffusion-anisotropic.mp4">
-		</video>
-		<div style="position: absolute; left: 600px; top: 600px" >
-			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
-			<br>
-			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
-		</div>
-	</section>
-
-
-
-	<section>
-		<h4>Diffusion statistics</h4>
-		<div class="fragment" style="position: absolute; left: 14px;">
-			<img src="img/tensor-stats1.png" height="400"  >
-			<div style="position: absolute; left: 75px; top: 420px;">
-				<small>Mean diffusivity</small>
-			</div>
-			<div style="position: absolute; left: -8px;">
-				<img src="img/md-scale.png" height="40" >
-			</div>
-			<div style="position: absolute; left: 222px; top:432px; ">
-				<img src="img/md-units.png" height="50" >
-			</div>
-		</div>
-		<div class="fragment fade-in" style="position: absolute; left: 7px;">
-			<img src="img/tensor-stats2.png" height="400"  >
-
-			<div style="position: absolute; left: 350px; top:432px; ">
-				<video width="200" autoplay loop>
-					<source src="./img/diffusion-fa-251.mov">
-			</div>
-
-			<div style="position: absolute; left: 350px; top: 420px;">
-				<small>Fractional anisotropy</small>
-			</div>
-
-		</div>
-		<div class="fragment fade-in" style="position: absolute; left: 0px;">
-			<img src="img/tensor-stats3.png" height="400"  >
-			<div style="position: absolute; left: 600px; top: 420px;">
-				<small>Principal diffusion direction</small>
-			</div>
-			<div style="position: absolute; left: 700px; top:432px; ">
-				<img src="img/axes.png" height="100" >
-			</div>
-		</div>
-		<div style="position: absolute; left: 600px; top: 640px" >
-			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
-			<br>
-			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
-		</div>
-	</section>
-
-	<section>
-		<img align="center" src="img/pyafq_segmentation1.gif" height="500">
-	</section>
-
-	<section>
-		<img align="center" src="img/pyafq_segmentation2.gif" height="500">
-	</section>
-
-	<section>
-		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
-		<img src="img/sarica_results.png" height="300px">
-		<div class="cite">
-			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
-		</div>
-	</section>
-
-
-	<section>
-		<h2>Challenges for open and reproducible neuroscience</h2>
-		<p class="fragment"></p>
-		<p class="fragment"></p>
-		<p class="fragment"></p>
-
-	</section>
-
-	<!-- <section>
 		<h3>Observatory-driven science</h3>
 		<div class="row fragment" data-fragment-index="1">
 				<div class="imgcite two-col">
@@ -435,9 +259,8 @@
 			<h2>Challenges</h2>
 			<p class="fragment">Data arriving at unprecedented volume, variety and velocity</p>
 			<p class="fragment">=> Need new tools and approaches to process, analyze and interpret</p>
-			<p class="fragment">=> New </p>
-			<p class="fragment">=> New sociotechnical structures to data science </p>
-	</section> -->
+			<p class="fragment">=> New sociotechnical structures sustain data science approaches </p>
+	</section>
 
 	<section>
 		<h2>Open source software is a necessary complement to brain observatories</h2>
@@ -543,8 +366,162 @@
 	<section>
 		<h2> NIPY: Neuroimaging in Python</h2>
 		<p class="fragment">A community of practice</p>
-		<p class="fragment"></p>
+		<p class="fragment">Many different projects and individuals</p>
+		<p class="fragment">Focus on commons</p>
+		<p class="fragment">Shared resources that are maintained collectively and available to anyone</p>
+	</section>
 
+	<section>
+		<img src="./img/optic-radiation-postmortem.png" height="505" >
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<video width="600" autoplay loop>
+			<source src="./img/dMRI-signal-movie.mp4">
+		</video>
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-iso-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-iso-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 390, 450, 590, 450);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-iso-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-iso-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 250, 350, 250, 150);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class="fragment" text-align: left>
+			Isotropic diffusion
+		</div>
+		<video width="600" autoplay loop>
+			<source src="./img/diffusion-isotropic.mp4">
+		</video>
+
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+
+	</section>
+
+	<section>
+		<h4>Diffusion MRI</h4>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-aniso-vert" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-aniso-vert').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 250, 325, 250, 175);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+		<div class = "fragment fade-in" style="position: absolute">
+			<canvas id="arrows-aniso-horiz" width="1000" height="1000">
+			</canvas>
+			<script>
+				context = document.getElementById('arrows-aniso-horiz').getContext("2d");
+				context.beginPath();
+				canvas_arrow_two_heads(context, 370, 400, 610, 400);
+				context.lineWidth = 2;
+				context.stroke();
+			</script>
+		</div>
+
+		<div class="fragment" text-align:left;>
+			Anisotropic diffusion
+		</div>
+		<video width="600" autoplay loop>
+			<source src="./img/diffusion-anisotropic.mp4">
+		</video>
+		<div style="position: absolute; left: 600px; top: 600px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+	</section>
+
+	<section>
+		<h4>Diffusion statistics</h4>
+		<div class="fragment" style="position: absolute; left: 14px;">
+			<img src="img/tensor-stats1.png" height="400"  >
+			<div style="position: absolute; left: 75px; top: 420px;">
+				<small>Mean diffusivity</small>
+			</div>
+			<div style="position: absolute; left: -8px;">
+				<img src="img/md-scale.png" height="40" >
+			</div>
+			<div style="position: absolute; left: 222px; top:432px; ">
+				<img src="img/md-units.png" height="50" >
+			</div>
+		</div>
+		<div class="fragment fade-in" style="position: absolute; left: 7px;">
+			<img src="img/tensor-stats2.png" height="400"  >
+
+			<div style="position: absolute; left: 350px; top:432px; ">
+				<video width="200" autoplay loop>
+					<source src="./img/diffusion-fa-251.mov">
+			</div>
+
+			<div style="position: absolute; left: 350px; top: 420px;">
+				<small>Fractional anisotropy</small>
+			</div>
+
+		</div>
+		<div class="fragment fade-in" style="position: absolute; left: 0px;">
+			<img src="img/tensor-stats3.png" height="400"  >
+			<div style="position: absolute; left: 600px; top: 420px;">
+				<small>Principal diffusion direction</small>
+			</div>
+			<div style="position: absolute; left: 700px; top:432px; ">
+				<img src="img/axes.png" height="100" >
+			</div>
+		</div>
+		<div style="position: absolute; left: 600px; top: 640px" >
+			<small><a href="http://jov.arvojournals.org/article.aspx?articleid=2603187">Rokem et al. (2017), Journal of Vision</a></small>
+			<br>
+			<small><a href="http://journals.plos.org/plosone/article?id=10.1371/journal.pone.0123272">Rokem et al. (2015), PLoS One</a></small>
+		</div>
+	</section>
+
+	<section>
+		<img align="center" src="img/pyafq_segmentation1.gif" height="500">
+	</section>
+
+	<section>
+		<img align="center" src="img/pyafq_segmentation2.gif" height="500">
+	</section>
+
+	<section>
+		<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
+		<img src="img/sarica_results.png" height="300px">
+		<div class="cite">
+			<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
+		</div>
 	</section>
 
 	<section>
@@ -590,7 +567,6 @@
 		</div>
 	</section>
 
-
 	<section>
 		<h2>Challenges for scientific software</h2>
 		<p class="fragment">Sustainability</p>
@@ -609,16 +585,6 @@
 		<p class="fragment">Provide a canonical citation for software that meets these standards</p>
 			<div class="cite"><a href="https://peerj.com/articles/cs-147/">Niemeyer et al. (2018)</a></div>
 		</div>
-	</section>
-
-
-
-	<section>
-		<h3>Challenge: tools for exploration of complex data</h3>
-		<p class="fragment">Results from large datasets are hard to understand </p>
-		<p class="fragment">Hard to communicate</p>
-		<p class="fragment">Hard to reproduce</p>
-		<p class="fragment">Data sharing is not incentivized and is not easy enough</p>
 	</section>
 
 	<section id="afq-browser">
@@ -643,23 +609,6 @@
 			<br>
 			Anisha <br> Keshavan
 		</div>
-	</section>
-
-	<section>
-		<img align="center" src="img/pyafq_segmentation1.gif" height="500">
-	</section>
-
-	<section>
-		<img align="center" src="img/pyafq_segmentation2.gif" height="500">
-	</section>
-
-	<section>
-			<h2>Amyotrophic Lateral Sclerosis (ALS)</h2>
-			<img src="img/sarica_results.png" height="300px">
-			<div class="cite">
-				<a href="https://onlinelibrary.wiley.com/doi/abs/10.1002/hbm.23412">Sarica et al. (2017)</a>
-			</div>
-
 	</section>
 
 	<section>
@@ -708,9 +657,13 @@
 	</section>
 
 	<section>
+		<h2>How do I get involved?</h2>
+	</section>
+
+	<section>
 		<h2><a href="http://neurohackademy.org/">Neurohackademy</a></h2>
 		<br>
-		A Summer Institute in Neuroscience and Data Science (=> 2021)
+		A Summer Institute in Neuroscience and Data Science
 		<img src="img/joy_of_hacking.png" height="400">
 		<div class="cite">
 				<a href="http://www.pnas.org/content/early/2018/08/17/1717196115"> Huppenkothen, Arendt, Hogg, Ram, Vanderplas & Rokem <br>(2018)</a>
